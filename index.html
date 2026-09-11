@@ -759,14 +759,14 @@ $('#kpis').innerHTML=kpis.map(([l,v,d,c])=>
 
  const V=[
   ['good',u('Dalem Kamulyan — convert, no hesitation'),
-   'Six listings, zero reviews in their entire history, zero revenue. There is literally nothing to lose. The Pakem rice-field setting models at $159 a night as a six-bedroom villa, and its comparables are the strongest of any cluster here — Eesa Villa at $26.4k, Griya Bunbun at $22.4k. It is also currently sold through OYO as a budget "Capital O" room at roughly a fifth of its Airbnb rate, which is actively destroying the positioning a rice-field villa should have.',
-   '$0 today → $22,600 modelled · 0 reviews at risk'],
+   tr({en:'Six listings, zero reviews in their entire history, zero revenue. There is literally nothing to lose. The Pakem rice-field setting models at $159 a night as a six-bedroom villa, and its comparables are the strongest of any cluster here — Eesa Villa at $26.4k, Griya Bunbun at $22.4k. It is also currently sold through OYO as a budget "Capital O" room at roughly a fifth of its Airbnb rate, which is actively destroying the positioning a rice-field villa should have.',id:'Enam listing, nol ulasan sepanjang sejarahnya, nol pendapatan. Benar-benar tidak ada yang bisa hilang. Latar persawahan Pakem dimodelkan di $159 per malam sebagai vila enam kamar, dan pembandingnya yang terkuat di antara semua klaster di sini — Eesa Villa di $26,4rb, Griya Bunbun di $22,4rb. Saat ini ia juga dijual lewat OYO sebagai kamar ekonomis "Capital O" dengan tarif sekitar seperlima dari tarif Airbnb-nya, dan itu justru merusak posisi yang semestinya dimiliki sebuah vila sawah.'}),
+   tr({en:'$0 today → $22,600 modelled · 0 reviews at risk',id:'$0 hari ini → $22.600 model · 0 ulasan berisiko'})],
   ['good',u('Omah Gerjen 29 — convert'),
-   'Eight lifetime reviews is a small price. The city-centre four-bedroom comparables are better than AirDNA’s own projection suggests: Prime Location City Centre runs $22.3k at 64% occupancy and Loji Sindu $19.1k — both roughly double the $10.6k model. Convert listing 2A so the five reviews and the 5.0 rating carry over.',
-   '$621 today → $10,600 modelled, plausibly more · 8 reviews at risk'],
+   tr({en:'Eight lifetime reviews is a small price. The city-centre four-bedroom comparables are better than AirDNA’s own projection suggests: Prime Location City Centre runs $22.3k at 64% occupancy and Loji Sindu $19.1k — both roughly double the $10.6k model. Convert listing 2A so the five reviews and the 5.0 rating carry over.',id:'Delapan ulasan sepanjang masa adalah harga yang murah. Pembanding empat kamar di pusat kota lebih baik daripada proyeksi AirDNA sendiri: Prime Location City Centre berjalan di $22,3rb dengan okupansi 64% dan Loji Sindu $19,1rb — keduanya kira-kira dua kali lipat model $10,6rb. Konversikan listing 2A agar lima ulasan dan rating 5,0 ikut terbawa.'}),
+   tr({en:'$621 today → $10,600 modelled, plausibly more · 8 reviews at risk',id:'$621 hari ini → $10.600 model, mungkin lebih · 8 ulasan berisiko'})],
   ['warn',u('Roemah Kenari — fix the price before you cancel anything'),
-   'This is the one to hold back. It is a genuine nineteen-room guesthouse rated 8.3 across four OTAs, and 134 lifetime reviews sit on these eight listings. Its Airbnb failure has an identifiable, cheap cause: Agoda sells it at about $33 while Airbnb asks $39–42. Airbnb is the most expensive place to book it, so nobody books it there. That is a pricing error, not proof the room model is wrong. Fix parity, give it two quarters, and convert only if the rooms still will not move. Converting now also means every whole-place booking has to block nineteen rooms across the other channels.',
-   '$605 today · 134 reviews at risk · whole-place models $25,000 vs $34,400 as rooms'],
+   tr({en:'This is the one to hold back. It is a genuine nineteen-room guesthouse rated 8.3 across four OTAs, and 134 lifetime reviews sit on these eight listings. Its Airbnb failure has an identifiable, cheap cause: Agoda sells it at about $33 while Airbnb asks $39–42. Airbnb is the most expensive place to book it, so nobody books it there. That is a pricing error, not proof the room model is wrong. Fix parity, give it two quarters, and convert only if the rooms still will not move. Converting now also means every whole-place booking has to block nineteen rooms across the other channels.',id:'Yang satu ini sebaiknya ditahan dulu. Ia guesthouse sembilan belas kamar yang sungguhan, bernilai 8,3 di empat OTA, dan 134 ulasan sepanjang masa melekat pada delapan listing ini. Kegagalannya di Airbnb punya sebab yang jelas dan murah diperbaiki: Agoda menjualnya sekitar $33 sementara Airbnb meminta $39–42. Airbnb jadi tempat termahal untuk memesannya, sehingga tidak ada yang memesan di sana. Itu kesalahan penetapan harga, bukan bukti bahwa model per kamar keliru. Samakan tarifnya, beri waktu dua kuartal, dan konversikan hanya bila kamar-kamarnya tetap tidak bergerak. Mengonversi sekarang juga berarti setiap pemesanan properti utuh harus memblokir sembilan belas kamar di kanal lain.'}),
+   tr({en:'$605 today · 134 reviews at risk · whole-place models $25,000 vs $34,400 as rooms',id:'$605 hari ini · 134 ulasan berisiko · model properti utuh $25.000 berbanding $34.400 sebagai kamar'})],
  ];
  $('#stratverdict').innerHTML=V.map(([k,h,p,e])=>`
   <div class="pat"><div class="dot" style="background:var(--${k==='good'?'good':'soga'})"></div>
@@ -992,9 +992,9 @@ $('#norms').innerHTML=D.NORMS.map(([h,p,e])=>
   U.portfolioTarget.toLocaleString('en-US')+'.';
 
  $('#phases').innerHTML=U.phases.map(([when,title,body,share])=>
-  `<div class="panel"><h3>${when} — ${title}</h3>
-   <p style="margin:0 0 10px;font-size:13.5px;color:var(--ink-2)">${body}</p>
-   <p style="margin:0;font-family:var(--ff-head);font-size:11.5px;color:var(--soga)">Expect ${share}</p></div>`).join('');
+  `<div class="panel"><h3>${tr(when)} — ${tr(title)}</h3>
+   <p style="margin:0 0 10px;font-size:13.5px;color:var(--ink-2)">${tr(body)}</p>
+   <p style="margin:0;font-family:var(--ff-head);font-size:11.5px;color:var(--soga)">${LANG==='id'?'Perkiraan':'Expect'} ${tr(share)}</p></div>`).join('');
 })();
 
 }
