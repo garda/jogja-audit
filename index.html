@@ -473,7 +473,7 @@ $('#cards').innerHTML=sorted.map(r=>{
   <div class="pctop">
    <div><h3>${r.name}</h3>
     <p class="ptitle">Listed as <em>&ldquo;${r.title}&rdquo;</em></p>
-    <div class="pcfg">${r.configLive||''} &nbsp;·&nbsp; ${r.area} &nbsp;·&nbsp; ${r.proj.sub} submarket</div></div>
+    <div class="pcfg">${r.configLive||''} &nbsp;·&nbsp; ${r.area} &nbsp;·&nbsp; ${r.proj.submarket} submarket</div></div>
    <div class="pscore"><div class="n ${sc} tnum">${r.score}</div><div class="g">${r.grade} · score</div></div>
   </div>
   <div class="pstats">${stats.map(([l,v])=>`<div class="pstat"><span class="l">${l}</span><span class="v">${v}</span></div>`).join('')}</div>
