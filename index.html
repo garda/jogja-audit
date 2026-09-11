@@ -332,7 +332,7 @@ footer .srcs{display:flex;gap:6px 22px;flex-wrap:wrap;font-family:"IBM Plex Mono
 <section>
  <div class="shead"><h2>The strategy: drop the rooms, sell whole places</h2>
   <span class="note">tested against AirDNA</span></div>
- <p class="lede">The proposal is to cancel the eighteen single-room listings and run whole places only.
+ <p class="lede">The plan on the table is to cancel the eighteen single-room listings and run whole places only.
  Tested against the numbers, it is the right call — but not uniformly, and one execution detail decides
  whether it works at all.</p>
 
@@ -492,7 +492,7 @@ footer .srcs{display:flex;gap:6px 22px;flex-wrap:wrap;font-family:"IBM Plex Mono
 </section>
 
 <section>
- <div class="shead"><h2>What to put in the proposal</h2><span class="note">each tied to a number above</span></div>
+ <div class="shead"><h2>Where to start</h2><span class="note">each tied to a number above</span></div>
  <div class="hooks" id="hooks"></div>
 </section>
 
@@ -515,7 +515,7 @@ footer .srcs{display:flex;gap:6px 22px;flex-wrap:wrap;font-family:"IBM Plex Mono
 </section>
 
 <footer>
- <div><b>Scope</b> Six whole-house properties, Yogyakarta &middot; prepared from public listing data and AirDNA</div>
+ <div><b>Scope</b> 29 Airbnb listings, Yogyakarta &middot; six whole houses examined in full, the rest counted &middot; prepared from public listing data and AirDNA</div>
  <div class="srcs"><span>Airbnb listing pages &amp; search, verified live 10&ndash;11 Sep 2026</span>
   <span>184 reviews via Apify</span><span>AirDNA Rentalizer &amp; Sleman market (Flatiro account)</span>
   <span>Public web &amp; OTA search</span></div>
@@ -899,8 +899,8 @@ const HOOKS=[
   'Discount visible on every one of the 8 sampled windows'],
  ['Treat Bisma Balcony as a relaunch','Zero reviews in twelve months, last one January 2025, the deepest discount and the lowest rate in the portfolio. Price is demonstrably not the constraint. It needs photos, a checkout time and one clear positioning before it needs anything else.',
   '0 reviews in 12m · 22 photos, 64% portrait · no exterior shot'],
- ['Ask for the real numbers','All of this is modelled from the outside. It is enough to show up knowing more than they expect, and not enough to plan against. The PMS export is the natural close and the fastest way to learn which of these gaps they already know about.',
-  '5 of 6 have AirDNA booking history · Bisma has none'],
+ ['Settle which brand owns the guest','The same buildings are sold under at least four different names: Alterstay on Airbnb, Bukit Vista on tiket.com and Agoda, OYO as Capital O, and Zuzu on Agoda. A guest comparing two of those pages sees two different products at two different prices for one address, and no single brand accumulates the reviews, the repeat stays or the direct relationship. Whatever the commercial arrangement behind it, this is worth resolving before any money goes into photography or pricing.',
+  'Oemah Larasati, Omah Gerjen 29, Dalem Kamulyan and Bisma Balcony each appear under a different manager brand'],
 ];
 $('#hooks').innerHTML=HOOKS.map(([h,p,e])=>
  `<div class="hook"><div class="hn"></div><div><h4>${h}</h4><p>${p}</p>
